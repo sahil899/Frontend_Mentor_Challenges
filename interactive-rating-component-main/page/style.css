@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  flex-direction: column;
+  /* giving width as fixed not relative */
+  width: 400px;
+  border: none;
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+.card > * {
+  margin: 0.5rem 0;
+  /* padding: 0 1.3rem; */
+}
+
+.icon {
+  padding: 1rem;
+  position: relative;
+}
+
+.icon::after {
+  content: "";
+  position: absolute;
+  background-color: hsl(217, 12%, 63%, 0.1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+.heading {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.card-body {
+  color: hsl(217, 12%, 63%);
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0rem 1rem; */
+  padding: 0;
+  align-items: center;
+}
+ul > li {
+  position: relative;
+  /* padding: 1rem; */
+  color: hsl(217, 12%, 63%);
+  font-weight: bold;
+  background-color: hsl(217, 12%, 63%, 0.1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* ul > li::after {
+  content: "";
+  position: absolute;
+  background-color: hsl(217, 12%, 63%, 0.1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: -3px;
+  z-index: 2;
+} */
+ul > li:hover {
+  color: #fff;
+  background-color: hsl(25, 97%, 53%);
+}
+ul > li:focus {
+  color: #fff;
+  background-color: hsl(217, 12%, 63%);
+}
+.ratingNumber {
+}
+button {
+  width: 300px;
+  margin: 0 auto !important;
+  padding: 10px;
+  border: none;
+  border-radius: 17px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: hsl(25, 97%, 53%);
+}
+
+button:hover {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+}
+
+.togglecard {
+  display: none;
+}
+
+.thanks-card {
+  text-align: center;
+  margin: 1rem 0;
+  justify-content: space-between;
+}
+.thanks-card > * {
+  padding: 0.6rem;
+}
+
+.thanks-rating {
+  background-color: hsl(217, 12%, 63%, 0.1);
+  color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  padding: 0.4rem;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0.6rem 1rem;
+}
+.thanks-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+.thanks-body {
+  color: hsl(217, 12%, 63%);
+  /* font-weight: bold; */
+  font-weight: 400;
+}
+
+@media screen and (max-width: 720px) {
+  .card {
+    width: 80%;
+  }
+  button {
+    width: 90%;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rating System</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="icon">
+            <img src="../images/icon-star.svg" alt="" srcset="">
+        </div>
+        <div class="heading"> How did we do?</div>
+        <div class="card-body">Please let us know we did your support request. All feeback is appreciated to help us
+            improve our offering!</div>
+        <div class="ratingNumber">
+            <ul>
+                <li data-list-value=1 tabindex="1">1</li>
+                <li data-list-value=2 tabindex="1">2</li>
+                <li data-list-value=3 tabindex="1">3</li>
+                <li data-list-value=4 tabindex="1">4</li>
+                <li data-list-value=5 tabindex="1">5</li>
+            </ul>
+
+        </div>
+        <button type="submit" onclick="submit()">SUBMIT</button>
+
+
+    </div>
+    <div class="card thanks-card">
+        <div class="thanks-img">
+            <img src="../images/illustration-thank-you.svg" alt="">
+        </div>
+        <div class="thanks-rating">
+            you selected 4 out of 5
+        </div>
+        <div class="thanks-heading">
+            Thank you!
+        </div>
+        <div class="thanks-body">
+            we appreciate you taking the time to give a rating. If you ever need more support,
+            don't hesitate to get in touch!
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
