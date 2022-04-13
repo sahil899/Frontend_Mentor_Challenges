@@ -14,7 +14,7 @@ body {
   transform: translate(-50%, -50%);
   background-color: hsl(217, 19%, 24%);
   width: 350px;
-  min-height: calc(5% + 149px);
+  /* min-height: calc(5% + 149px); */
   border: none;
   border-radius: 10px;
 }
@@ -35,7 +35,7 @@ body {
 .separation {
   display: flex;
   color: hsl(193, 38%, 86%);
-  padding: 1rem 0;
+  padding: 3rem 0;
 }
 .separation::before,
 .separation::after {
