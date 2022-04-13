@@ -15,3 +15,4 @@ function fetchData() {
 }
 
 button.addEventListener("click", fetchData);
+window.addEventListener("load", fetchData);
