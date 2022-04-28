@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(226, 43%, 10%);
+}
+.dashboard {
+  display: grid;
+  margin: 8rem 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+  height: 65vh;
+}
+
+.profile {
+  background-color: hsl(235, 46%, 20%);
+  grid-row: 1/-1;
+  border: none;
+  border-radius: 10px;
+}
+.profile-display {
+  background-color: hsl(246, 80%, 60%);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.profile-display img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.profile-display p {
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+}
+.profile-display h1 {
+  font-size: 2.3rem;
+  color: #fff;
+}
+.operations > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+li {
+  padding: 1rem 0;
+  color: hsl(235, 45%, 61%);
+}
+li:hover {
+  color: #fff;
+}
+.active {
+  color: #eee;
+}
+.activity {
+  margin-top: 3rem;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+  border: none;
+  padding: 1rem;
+  height: 81%;
+}
+.activity:hover {
+  background-color: hsl(246, 80%, 60%);
+}
+.heading {
+  color: #fff;
+}
+.heading > span {
+  font-size: 1.2rem;
+}
+.heading > i {
+  float: right;
+}
+.display-time {
+  color: #fff;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+.previous-time {
+  color: hsl(235, 45%, 61%);
+}
+
+#work {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url(./images/icon-work.svg);
+}
+
+#play {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url(./images/icon-play.svg);
+}
+#study {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url(./images/icon-study.svg);
+}
+#exercise {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url(./images/icon-exercise.svg);
+}
+#social {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url(./images/icon-social.svg);
+}
+#selfcare {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url(./images/icon-self-care.svg);
+}
+.card-style {
+  background-repeat: no-repeat;
+  background-position: 93% 0;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: auto;
+    margin-bottom: 2rem;
+  }
+  .profile {
+    grid-row: unset;
+  }
+  .profile-display {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.3rem inherit;
+  }
+  .heading h1 {
+    font-size: 1.5rem;
+  }
+  .operations ul {
+    flex-direction: row;
+    padding: 0;
+  }
+  li {
+    margin: unset;
+  }
+}
+
+/* @media screen and (max-width: 1000px) {
+  .dashboard {
+    top: 0;
+    left: 0;
+    transform: none;
+    grid-template-columns: 1fr;
+    position: unset;
+    max-width: 90vh;
+    margin: 3rem auto;
+  }
+  .activities {
+    grid-template-columns: 1fr;
+  }
+} */
