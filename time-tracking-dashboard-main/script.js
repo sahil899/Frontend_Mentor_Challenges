@@ -65,6 +65,7 @@ function weeklyUpdate() {
     </div>
   </div>
     `;
+    console.log(dashboard.innerHTML);
   });
   console.log(weekly);
   console.log("checking::::::2" + dashboard);
