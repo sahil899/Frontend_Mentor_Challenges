@@ -48,8 +48,8 @@ body {
   flex-direction: column;
 }
 li {
-  padding: 1rem 0;
   color: hsl(235, 45%, 61%);
+  padding: 1rem 0;
 }
 li:hover {
   color: #fff;
