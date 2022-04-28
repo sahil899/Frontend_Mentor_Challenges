@@ -42,7 +42,8 @@ function weeklyUpdate() {
     }
   });
   document.querySelectorAll(".card-style").forEach((x) => x.remove());
-  console.log(dashboard + "checking1");
+  console.log({ dashboard } + "checking1");
+  console.log(weekly);
   weekly.map((itr) => {
     console.log(itr);
     dashboard.innerHTML += `<div id="${itr.title
