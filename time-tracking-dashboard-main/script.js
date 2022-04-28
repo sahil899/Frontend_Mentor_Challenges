@@ -42,7 +42,9 @@ function weeklyUpdate() {
     }
   });
   document.querySelectorAll(".card-style").forEach((x) => x.remove());
+  console.log(dashboard + "checking1");
   weekly.map((itr) => {
+    console.log(itr);
     dashboard.innerHTML += `<div id="${itr.title
       .toLowerCase()
       .split(" ")
@@ -63,6 +65,8 @@ function weeklyUpdate() {
   </div>
     `;
   });
+  console.log(weekly);
+  console.log("checking::::::2" + dashboard);
 }
 
 function dailyUpdate() {
