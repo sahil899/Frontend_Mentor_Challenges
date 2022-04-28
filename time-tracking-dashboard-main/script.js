@@ -33,6 +33,7 @@ fetch("./data.json")
   });
 
 function weeklyUpdate() {
+  console.log("checking the update");
   document.querySelectorAll("li").forEach((itr) => {
     if (itr.innerText == "Weekly") {
       itr.classList.add("active");
